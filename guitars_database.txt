@@ -1,0 +1,17 @@
+123,1000.0,Fender,Stratocaster,Electric,Alder,Maple
+101,900.0,Fender,Stratocaster,Electric,Alder,Maple
+102,950.0,Fender,Telecaster,Electric,Alder,Rosewood
+789,1200.0,PRS,Custom 24,Electric,Mahogany,Maple
+456,1500.0,Gibson,Les Paul,Electric,Mahogany,Maple
+123,1000.0,Fender,Stratocaster,Electric,Alder,Maple
+101,900.0,Fender,Stratocaster,Electric,Alder,Maple
+102,950.0,Fender,Telecaster,Electric,Alder,Rosewood
+789,1200.0,PRS,Custom 24,Electric,Mahogany,Maple
+456,1500.0,Gibson,Les Paul,Electric,Mahogany,Maple
+123,1000.0,Fender,Stratocaster,Electric,Alder,Maple
+102,950.0,Fender,Telecaster,Electric,Alder,Rosewood
+789,1200.0,PRS,Custom 24,Electric,Mahogany,Maple
+456,1500.0,Gibson,Les Paul,Electric,Mahogany,Maple
+102,950.0,Fender,Telecaster,Electric,Alder,Rosewood
+789,1200.0,PRS,Custom 24,Electric,Mahogany,Maple
+456,1500.0,Gibson,Les Paul,Electric,Mahogany,Maple
