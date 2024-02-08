@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 public class Guitar {
     private String serialNumber;
     private double price;
@@ -14,7 +15,7 @@ public class Guitar {
     private String topWood;
 
     // Add a default constructor for Spring
-    public Guitar(String builder, String backWood) {
+    public Guitar() {
     }
 
     public Guitar(String serialNumber, double price, String builder, String model, String type, String backWood, String topWood) {
@@ -26,7 +27,6 @@ public class Guitar {
         this.backWood = backWood;
         this.topWood = topWood;
     }
-
 
     public String getSerialNumber() {
         return serialNumber;
@@ -59,8 +59,6 @@ public class Guitar {
     public String getTopWood() {
         return topWood;
     }
-
-    // Getters and setters as needed
 
     public void writeToFile() {
         try (PrintWriter writer = new PrintWriter(new FileWriter("guitars_database.txt", true))) {
