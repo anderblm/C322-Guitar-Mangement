@@ -1,11 +1,13 @@
 package edu.iu.anderblm.c322spring2024homework2.Controllers;
 
+import edu.iu.anderblm.c322spring2024homework2.Model.Builder;
 import edu.iu.anderblm.c322spring2024homework2.Model.Guitar;
+import edu.iu.anderblm.c322spring2024homework2.Model.Type;
+import edu.iu.anderblm.c322spring2024homework2.Model.Wood;
 import edu.iu.anderblm.c322spring2024homework2.Repository.InventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Type;
 import java.util.List;
 
 @RestController
@@ -20,14 +22,13 @@ public class InventoryController {
 
     @GetMapping("/search")
     public List<Guitar> searchGuitars(
-            @RequestParam String builder,
-            @RequestParam String backWood,
+            @RequestParam Builder builder,
+            @RequestParam Wood backWood,
             @RequestParam String model,
-            @RequestParam String type,
-            @RequestParam String topWood,
+            @RequestParam Type type,
+            @RequestParam Wood topWood,
             @RequestParam String serialNumber,
             @RequestParam double price
-
     ) {
         return inventoryRepository.search(new Guitar(serialNumber, price, builder, model, type, backWood, topWood));
     }
