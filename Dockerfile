@@ -1,4 +1,4 @@
 FROM eclipse-temurin:17
 WORKDIR /home
-COPY ./target/c322-spring2024-homework2-0.0.1-SNAPSHOT.jar gim.jar
+COPY ./target/Guitar-Management-0.0.1-SNAPSHOT.jar gim.jar
 ENTRYPOINT ["java", "-jar", "gim.jar"]
