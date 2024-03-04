@@ -14,16 +14,16 @@ public class Guitar {
     private Wood topWood;
 
     // Add a default constructor for Spring
-<<<<<<< HEAD
+
     public Guitar(String builder, String backWood) {
-=======
+
 
     public Guitar(String builder, String backWood) {
         // Implement constructor if needed
 
     public Guitar() {
 
->>>>>>> f1072738b3698feaa930078d5a8f7e5b1647b780
+
     }
 
     public Guitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood) {
