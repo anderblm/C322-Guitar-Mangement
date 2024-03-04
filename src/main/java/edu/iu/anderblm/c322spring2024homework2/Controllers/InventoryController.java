@@ -22,6 +22,7 @@ public class InventoryController {
 
     @GetMapping("/search")
     public List<Guitar> searchGuitars(
+
             @RequestParam Builder builder,
             @RequestParam Wood backWood,
             @RequestParam String model,
@@ -29,6 +30,16 @@ public class InventoryController {
             @RequestParam Wood topWood,
             @RequestParam String serialNumber,
             @RequestParam double price
+
+            @RequestParam(required = false) String builder,
+            @RequestParam(required = false) String backWood,
+            @RequestParam(required = false) String model,
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String topWood,
+            @RequestParam(required = false) String serialNumber,
+            @RequestParam(required = false) double price
+
+
     ) {
         return inventoryRepository.search(new Guitar(serialNumber, price, builder, model, type, backWood, topWood));
     }

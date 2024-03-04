@@ -2,10 +2,9 @@ package edu.iu.anderblm.c322spring2024homework2.Repository;
 
 import edu.iu.anderblm.c322spring2024homework2.Model.Guitar;
 import org.springframework.stereotype.Repository;
-
+import java.lang.String;
 import java.util.ArrayList;
 import java.util.List;
-
 
 @Repository
 public class InventoryRepository {
@@ -29,6 +28,7 @@ public class InventoryRepository {
         }
         return null;
     }
+
     public List<Guitar> getGuitars() {
         return new ArrayList<>(guitars);
     }
