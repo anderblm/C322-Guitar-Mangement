@@ -8,22 +8,17 @@ import java.io.PrintWriter;
 public class Guitar {
     private String serialNumber;
     private double price;
-    private Builder builder;
+    private String builder;
     private String model;
-    private Type type;
-    private Wood backWood;
-    private Wood topWood;
+    private String type;
+    private String backWood;
+    private String topWood;
 
     // Add a default constructor for Spring
-
-    public Guitar(String builder, String backWood) {
-        // Implement constructor if needed
-
     public Guitar() {
-
     }
 
-    public Guitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood) {
+    public Guitar(String serialNumber, double price, String builder, String model, String type, String backWood, String topWood) {
         this.serialNumber = serialNumber;
         this.price = price;
         this.builder = builder;
@@ -45,7 +40,7 @@ public class Guitar {
         this.price = newPrice;
     }
 
-    public Builder getBuilder() {
+    public String getBuilder() {
         return builder;
     }
 
@@ -53,21 +48,21 @@ public class Guitar {
         return model;
     }
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public Wood getBackWood() {
+    public String getBackWood() {
         return backWood;
     }
 
-    public Wood getTopWood() {
+    public String getTopWood() {
         return topWood;
     }
 
     public void writeToFile() {
         try (PrintWriter writer = new PrintWriter(new FileWriter("guitars_database.txt", true))) {
-            writer.println(serialNumber + "," + price + "," + builder.toString() + "," + model + "," + type.toString() + "," + backWood.toString() + "," + topWood.toString());
+            writer.println(serialNumber + "," + price + "," + builder + "," + model + "," + type + "," + backWood + "," + topWood);
             System.out.println("Guitar written to guitars_database.txt.");
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
